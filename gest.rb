@@ -11,4 +11,7 @@ def  initialize(name,age,wallet,favourite_song)
   @favourite_song = favourite_song
   end
 
+  def check_disk_library(room)
+    room.songs.each{ |song| return 'Whoo yeahh' if song.name == @favourite_song }
+  end
 end

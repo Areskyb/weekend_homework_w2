@@ -14,10 +14,10 @@ def setup()
   @gest4 = Gest.new("Omar", 50,67,"hey Jude")
   @gests1 = [@gest1,@gest2,@gest3,@gest4,]
 
-  @gest5 = Gest.new("Riard",69,80)
-  @gest6 = Gest.new("gfred", 70,15)
-  @gest7 = Gest.new("Muggini", 30,12703)
-  @gest8 = Gest.new("Omare", 5,67)
+  @gest5 = Gest.new("Riard",69,80,"hey Jude")
+  @gest6 = Gest.new("gfred", 70,15,"hey Jude")
+  @gest7 = Gest.new("Muggini", 30,12703,"hey Jude")
+  @gest8 = Gest.new("Omare", 5,67,"hey Jude")
   @gests2 = [@gest5,@gest6,@gest7,@gest8,]
 
   @song1 = Song.new("hey Jude",true)
@@ -44,6 +44,7 @@ end
 
 def test_attr_works
 assert_equal(4, @karaoke.rooms.length)
+assert_equal(0, @karaoke.wating_room.length)
 end
 
 end

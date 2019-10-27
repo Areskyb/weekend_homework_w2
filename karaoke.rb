@@ -1,6 +1,6 @@
 class Karaoke
 
-attr_reader :rooms, :total_gests, :total_till
+attr_accessor :rooms, :total_gests, :total_till, :wating_room
 
 def initialize(rooms,total_gests, total_till)
 
